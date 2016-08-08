@@ -1,8 +1,8 @@
 (function ($) {
 
-    $.fn.overflowButton = function (options) {
+    $.fn.scrollButton = function (options) {
 
-        var opts = $.extend($.fn.overflowButton.defaults, options);
+        var opts = $.extend($.fn.scrollButton.defaults, options);
 
         function warn (message) {
             if (window.console && window.console.warn) {
@@ -14,13 +14,13 @@
             var $target = $(this);
 
             if ($target.css('position') != 'relative') {
-                warn('OverflowButton: o elemento de destino não possui posição relative.');
+                warn('scrollButton: o elemento de destino não possui posição relative.');
             }
 
-            var $button = $('.overflow-button', $target);
+            var $button = $('.scroll-buttom', $target);
 
             if ($button.length == 0) {
-                $button = $('<div class="overflow-button" title="Ir para o topo da página."><span class="arrow">&uarr;</span></div>');
+                $button = $('<div class="scroll-buttom" title="' + opts.caption + '"><span class="arrow">&uarr;</span></div>');
                 $target.append($button);
             }
 
@@ -56,8 +56,9 @@
         return this;
     };
 
-    $.fn.overflowButton.defaults = {
-        size: 32
+    $.fn.scrollButton.defaults = {
+        size: 32,
+        caption: 'Voltar para o início.'
     };
 
 })(jQuery);

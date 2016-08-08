@@ -1,4 +1,4 @@
-# Overflow-Buttom (jQuery Plugin)
+# Scroll-Buttom (jQuery Plugin)
 
 Esse plugin adiciona um botão *Voltar para o início* em elementos com *overflow*.
 
@@ -6,10 +6,11 @@ Esse plugin adiciona um botão *Voltar para o início* em elementos com *overflo
 
 ```html
 <script src="jquery-2.2.4.js"></script>
-<script src="jquery-overflowButton.js"></script>
+<script src="jquery-scrollButton.js"></script>
 <script>
-    $('.container').overflowButton({
-        size: 32
+    $('.container').scrollButton({
+        size: 32,
+        caption: 'Voltar para o início.'
     });
 </script>
 ```
@@ -17,11 +18,12 @@ Esse plugin adiciona um botão *Voltar para o início* em elementos com *overflo
 ## Defaults
 
 ```javascript
-$.fn.overflowButton.defaults = {
-    size: 32
+$.fn.scrollButton.defaults = {
+    size: 32,
+    caption: 'Voltar para o início.'
 };
 ```
 
 ## Preview
 
-Acesse esse [link](http://olegon.github.io/jquery-overflowbutton).
+Acesse esse [link](http://olegon.github.io/jquery-scrollButton).
