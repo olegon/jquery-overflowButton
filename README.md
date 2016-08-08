@@ -26,4 +26,4 @@ $.fn.scrollButton.defaults = {
 
 ## Demonstração
 
-Acesse esse [link](http://olegon.github.io/jquery-scrollButton).
+Acesse esse [link](http://olegon.github.io/jquery-scrollbutton).
