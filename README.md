@@ -15,7 +15,7 @@ Esse plugin adiciona um botão *Voltar para o início* em elementos com *overflo
 </script>
 ```
 
-## Defaults
+## Valores padrões
 
 ```javascript
 $.fn.scrollButton.defaults = {
@@ -24,6 +24,6 @@ $.fn.scrollButton.defaults = {
 };
 ```
 
-## Preview
+## Demonstração
 
 Acesse esse [link](http://olegon.github.io/jquery-scrollButton).
