@@ -40,7 +40,7 @@
                 var targetHeight = $target.height();
                 var targetScrollTop = $target.scrollTop();
 
-                if (targetScrollTop > targetHeight / 2) {
+                if (targetScrollTop > 50) {
                     $button.css({
                         'top': (targetHeight + targetScrollTop - opts.size * 2.25) + 'px'
                     });
